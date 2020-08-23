@@ -51,8 +51,8 @@ class PokemonList : Fragment() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe{ pokemonDex ->
-                Common.pokemonList = pokemonDex.pokemon!!
-                val adapter = PokemonListAdapter(activity!!, Common.pokemonList)
+                Common.commonPokemonList = pokemonDex.pokemon!!
+                val adapter = PokemonListAdapter(activity!!, Common.commonPokemonList)
 
                 this.recycleView.adapter = adapter
             })

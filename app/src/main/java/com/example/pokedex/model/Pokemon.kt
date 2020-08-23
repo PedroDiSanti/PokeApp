@@ -17,8 +17,8 @@ class Pokemon {
         public string spawn_time { get; set; }
         public List<double> multipliers { get; set; }
         public List<string> weaknesses { get; set; }
-        public List<NextEvolution> next_evolution { get; set; }
-        public List<PrevEvolution> prev_evolution { get; set; }
+        public List<Evolution> next_evolution { get; set; }
+        public List<Evolution> prev_evolution { get; set; }
     */
     var id:Int = 0
     var num:String? = null
@@ -28,11 +28,11 @@ class Pokemon {
     var height:String? = null
     var weight:String? = null
     var candy:String? = null
-    var candy_count:Int = 0
+    var candyCount:Int = 0
     var egg:String? = null
-    var spawn_chance:Double=0.toDouble()
-    var avg_spawns:Double=0.toDouble()
-    var spawn_time:String?=null
+    var spawnChance:Double=0.toDouble()
+    var avgSpawns:Double=0.toDouble()
+    var spawnTime:String?=null
     var multipliers:List<Double>?=null
     var weaknesses:List<String>?=null
     var next_evolution:List<Evolution>?=null
